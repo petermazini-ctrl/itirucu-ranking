@@ -338,6 +338,18 @@ def get_companies_from_google_maps(region, tracked_companies=None):
         f"sacolao hortifruti verduras legumes frutas em {region}",
         f"mercearia empório produtos naturais em {region}",
         f"acougue comercio carnes em {region}",
+        # Buscas para nichos sub-representados
+        f"restaurante pizzaria lanchonete em Entroncamento de Jaguaquara",
+        f"restaurante pizzaria lanchonete em Jaguaquara",
+        f"restaurante pizzaria lanchonete em {region}",
+        f"padaria confeitaria doceria em {region}",
+        f"pet shop veterinario agropecuaria em {region}",
+        f"clinica medico hospital em {region}",
+        f"bar restaurante em {region}",
+        f"sorveteria acai em {region}",
+        f"imobiliaria corretor imoveis em {region}",
+        f"bicicleta pecas em {region}",
+        f"contabilidade consultoria em {region}",
     ]
 
     for term in search_terms:
