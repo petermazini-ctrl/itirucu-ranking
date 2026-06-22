@@ -251,6 +251,11 @@ def get_companies_from_google_maps(region, tracked_companies=None):
         f"material construcao ferragem em Jaguaquara",
         f"loja moveis decoracao em Jaguaquara",
         f"advocacia advogado em Jaguaquara",
+        # Mercados/Supermercados - Jaguaquara e Entroncamento
+        f"supermercado atacadista em Jaguaquara",
+        f"mercado mercearia sacolao em Jaguaquara",
+        f"supermercado atacadista em Entroncamento de Jaguaquara",
+        f"mercado mercearia sacolao em Entroncamento de Jaguaquara",
         # Itiruçu
         f"empresas em {region}",
         f"restaurantes pizzarias padarias em {region}",
@@ -325,6 +330,14 @@ def get_companies_from_google_maps(region, tracked_companies=None):
         f"informatica notebook computador em {region}",
         f"casa festas brinquedos infantis em {region}",
         f"deposito bebidas distribuidora em {region}",
+        # Buscas especificas de mercados/supermercados
+        f"supermercado mercadinho em Entroncamento de Jaguaquara",
+        f"supermercado mercadinho em Jaguaquara",
+        f"supermercado mercadinho em {region}",
+        f"atacadista distribuidora alimentos em {region}",
+        f"sacolao hortifruti verduras legumes frutas em {region}",
+        f"mercearia empório produtos naturais em {region}",
+        f"acougue comercio carnes em {region}",
     ]
 
     for term in search_terms:
