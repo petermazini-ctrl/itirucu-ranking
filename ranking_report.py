@@ -220,6 +220,27 @@ CATEGORY_MAP = {
     'salão de beleza': 'Salão de Beleza / Barbearia',
     'loja de marcenaria': 'Móveis / Decoração',
     'loja de comunicação visual em vinil': 'Gráfica / Comunicação Visual',
+    # Categorias do Google Maps que precisam de mapeamento
+    'banho e tosa': 'Pet Shop / Veterinário',
+    'hospital geral': 'Clínicas / Médicos',
+    'maternidade': 'Clínicas / Médicos',
+    'pastelaria brasileira': 'Lanchonetes / Hamburguerias',
+    'bar': 'Bares / Lounge',
+    'bar de cervejas': 'Bares / Lounge',
+    'diner': 'Lanchonetes / Hamburguerias',
+    'espresso bar': 'Café / Lanchonete',
+    'distribuidor de bebidas': 'Bebidas / Distribuidora',
+    'restaurante japonês': 'Restaurantes',
+    'agência de viagens de ônibus': 'Agência de Viagens / Turismo',
+    'posto de abastecimento de veículos elétricos': 'Posto de Combustível',
+    'loja de peças para motocicletas': 'Oficina Mecânica / Auto Peças',
+    'revendedora de carros usados': 'Revendedora de Veículos',
+    'serviço de contabilidade de custos': 'Contabilidade / Consultoria',
+    'corretora de aluguel de imóveis': 'Imobiliária',
+    'agente imobiliário': 'Imobiliária',
+    'veterinário': 'Pet Shop / Veterinário',
+    'assessoria contábil': 'Contabilidade / Consultoria',
+    'concessionária volvo': 'Concessionárias',
 }
 
 for c in companies:
@@ -228,7 +249,7 @@ for c in companies:
         c['category'] = CATEGORY_MAP[cat]
 
 # Filtra nichos invalidos (aberto, fechado, etc)
-INVALID_CATEGORIES = {'aberto', 'aberto 24 horas', 'aberto agora', 'fechado', 'aberto agora'}
+INVALID_CATEGORIES = {'aberto', 'aberto 24 horas', 'aberto agora', 'fechado', 'aberto agora', 'fecha em breve'}
 for c in companies:
     cat = (c.get('category') or 'Sem categoria').strip().lower()
     if cat in INVALID_CATEGORIES:
